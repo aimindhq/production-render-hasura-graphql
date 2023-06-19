@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: production-api-aimind
+  name: prod-api-aimind
   plan: starter plus
   env: docker
   region: ohio
@@ -22,6 +22,6 @@ services:
   - key: HASURA_GRAPHQL_UNAUTHORIZED_ROLE
     value: anonymous
 databases:
-- name: production-api-aimind
+- name: prod-api-aimind
   postgresMajorVersion: 15
   region: ohio
